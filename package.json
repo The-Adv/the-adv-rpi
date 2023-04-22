@@ -1,0 +1,16 @@
+{
+	"name": "the-adv-server",
+	"version": "1.2.1",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"author": "",
+	"dependencies": {
+		"express": "^4.16.4",
+		"mic": "^2.1.2",
+		"socket.io": "^2.3.0",
+		"wav": "^1.0.2"
+	}
+}

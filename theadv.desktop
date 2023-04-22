@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=The Adv
+Icon=/home/pi/the-adv-pi/icon.xpm
+Exec=lxterminal -e /home/pi/the-adv-pi/start_kiosk.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false;

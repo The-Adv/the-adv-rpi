@@ -1,0 +1,16 @@
+[Unit]
+Description=The Adv Server
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/node /home/pi/the-adv-pi/server.js
+
+Restart=always
+RestartSec=10
+
+StandardOutput=Syslog
+StandardError=Syslog
+SyslogIdentifier=nodejs
+
+[Install]
+WantedBy=multi-user.target
