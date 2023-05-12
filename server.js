@@ -87,9 +87,12 @@ io.sockets.on("connection", (socket) => {
   });
 
   socket.on("save_data", (data) => {
-    var filename = dataDir + getUniqueFilename() + ".json";
+    var filename = dataDir + getUniqueFilename() + ".txt";
 
-    fs.writeFile(filename, data, function (err, data) {
+    // decode the url encoded text
+    const decodedString = decodeURIComponent(data);
+
+    fs.writeFile(filename, decodedString, function (err) {
       if (err) console.log(err);
       console.log(`DATA: Successfully Written to File '${filename}'`);
     });
